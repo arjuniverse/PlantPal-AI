@@ -4,7 +4,7 @@
 
 The platform is designed to make plant care simple, intelligent, and interactive through a beautiful modern user experience.
 
-
+link : https://plant-pal-ai-eta.vercel.app/
 ---
 
 ## ✨ Features
