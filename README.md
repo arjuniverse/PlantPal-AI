@@ -1,38 +1,5 @@
 # 🌱 PlantPal AI
 
-**PlantPal AI** is an AI-powered smart plant care assistant that helps users monitor plant health using Computer Vision and Artificial Intelligence. By scanning plant images, the app can detect watering needs, overwatering, diseases, unhealthy leaves, and provide personalized plant care recommendations.
-
-The platform is designed to make plant care simple, intelligent, and interactive through a beautiful modern user experience.
-
-link : https://plant-pal-ai-eta.vercel.app/
----
-
-## ✨ Features
-
-- 📷 AI-powered plant scanning
-- 🌿 Plant health analysis
-- 💧 Smart watering recommendations
-- 🚨 Overwatering & underwatering detection
-- 🍂 Leaf disease detection
-- 🧠 AI-generated care suggestions
-- 🔔 Smart reminders & notifications
-- 📊 Plant health dashboard
-- 🌙 Dark mode support
-- ⚡ Smooth Apple-inspired UI
-
----
-
-## 💡 How It Works
-
-1. User uploads or scans a plant image
-2. AI analyzes leaves, color, and plant condition
-
-3. System detects:
-   - Water needs
-   - Diseases
-   - Health issues
-   - Nutrient deficiencies
-4. App generates smart care suggestions and reminders
 
 ### Example
 > “Your Monstera is slightly dehydrated. Water within 5 hours.”
