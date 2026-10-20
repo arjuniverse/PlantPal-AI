@@ -6,35 +6,36 @@ The platform is designed to make plant care simple, intelligent, and interactive
 
 link : https://plant-pal-ai-eta.vercel.app/
 ---
+## ACTIVITY FLOWCHART OF PLANTPAL AI
 
-'''
+```mermaid
 flowchart TD
     A(["START"]) --> B["Open PlantPal AI"]
     B --> C["Select or Add a Plant"]
-    C --> D["Upload or Capture Plant Image"]
+    C --> D["Upload Plant Image"]
     D --> E{"Image Valid?"}
 
-    E -- No --> F["Show Error Message"]
+    E -->|No| F["Show Error"]
     F --> D
 
-    E -- Yes --> G["Process Plant Image"]
-    G --> H["AI-Based Plant Analysis"]
+    E -->|Yes| G["Process Image"]
+    G --> H["AI Plant Analysis"]
 
     subgraph AI["AI ANALYSIS"]
         H --> I["Analyze Leaf Color and Texture"]
-        I --> J["Detect Diseases and Leaf Damage"]
-        J --> K["Estimate Plant Health"]
-        K --> L["Assess Watering Needs"]
+        I --> J["Detect Possible Diseases"]
+        J --> K["Assess Plant Health"]
+        K --> L["Evaluate Watering Needs"]
     end
 
     L --> M["Generate Health Report"]
-    M --> N["Provide Personalized Care Suggestions"]
-    N --> O["Display Results on Dashboard"]
+    M --> N["Recommend Plant Care"]
+    N --> O["Display Results"]
 
-    O --> P{"User Action"}
-    P --> Q["View Plant Health"]
+    O --> P{"Choose Action"}
+    P --> Q["View Health Report"]
     P --> R["Set Watering Reminder"]
-    P --> S["View Disease Treatment"]
+    P --> S["View Treatment Advice"]
     P --> T["Save Scan History"]
 
     Q --> U{"Scan Another Plant?"}
@@ -42,19 +43,17 @@ flowchart TD
     S --> U
     T --> U
 
-    U -- Yes --> C
-    U -- No --> V(["END"])
+    U -->|Yes| C
+    U -->|No| V(["END"])
 
-    classDef start fill:#D9EAD3,stroke:#38761D,color:#111,stroke-width:2px
-    classDef process fill:#D9EAF7,stroke:#2878A5,color:#111,stroke-width:1.5px
-    classDef decision fill:#FFF2CC,stroke:#BF9000,color:#111,stroke-width:2px
-    classDef result fill:#EADCF8,stroke:#674EA7,color:#111,stroke-width:1.5px
+    style A fill:#d9ead3,stroke:#38761d,color:#000
+    style V fill:#d9ead3,stroke:#38761d,color:#000
+    style E fill:#fff2cc,stroke:#bf9000,color:#000
+    style P fill:#fff2cc,stroke:#bf9000,color:#000
+    style U fill:#fff2cc,stroke:#bf9000,color:#000
+    style H fill:#d9eaf7,stroke:#2878a5,color:#000
+```
 
-    class A,V start
-    class B,C,D,F,G,I,J,K,L,M,N,O,Q,R,S,T process
-    class E,P,U decision
-    class H result
-'''
     ## ✨ Features
 
 - 📷 AI-powered plant scanning
