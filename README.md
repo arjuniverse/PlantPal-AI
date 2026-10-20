@@ -7,7 +7,7 @@ The platform is designed to make plant care simple, intelligent, and interactive
 link : https://plant-pal-ai-eta.vercel.app/
 ---
 
-
+'''
 flowchart TD
     A(["START"]) --> B["Open PlantPal AI"]
     B --> C["Select or Add a Plant"]
@@ -54,7 +54,7 @@ flowchart TD
     class B,C,D,F,G,I,J,K,L,M,N,O,Q,R,S,T process
     class E,P,U decision
     class H result
-    
+'''
     ## ✨ Features
 
 - 📷 AI-powered plant scanning
